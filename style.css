@@ -1,0 +1,95 @@
+body {
+    background-color: #d4d1ce;
+}
+.calculator_outer {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    margin: 0 auto;
+}
+.calculator {
+    margin: auto;
+    background-color: #5e686d;
+    padding: 20px;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 20px 3px #194a6b;
+    -moz-box-shadow: 0px 0px 20px 3px #194a6b;
+    box-shadow: 0px 0px 20px 3px #194a6b;
+    background-image: linear-gradient(to bottom, #2d83bd, #194a6b);
+    border-style: outset;
+    bottom: 3px outset black;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.operators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.operators:last-child{
+    margin:0;
+}
+
+.main_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.display {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: #d0e6f0;
+    background-image: linear-gradient(to bottom, #123a55, rgb(2, 12, 19));
+    color: rgb(200, 210, 223);
+    box-shadow: 0px 0px 10px 3px #dddddd;
+}
+
+.display_inner {
+    min-width: 400px;
+    min-height: 30px;
+    font-family: Arial;
+    font-size: 24px;
+    padding:10px;
+    align-self: center;
+    text-align: right;
+}
+
+.display_answer {
+    font-size: 14px;
+    min-height: 16px;
+    text-align: right;
+    border-top: 1px solid white;
+    padding: 5px 10px;
+}
+
+button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    cursor: pointer;
+  }
